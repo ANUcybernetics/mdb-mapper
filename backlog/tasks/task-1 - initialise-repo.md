@@ -1,9 +1,10 @@
 ---
 id: task-1
 title: initialise repo
-status: In Progress
+status: Done
 assignee: []
-created_date: "2025-08-03 22:26"
+created_date: '2025-08-03 22:26'
+updated_date: '2025-08-03 23:57'
 labels: []
 dependencies: []
 ---
