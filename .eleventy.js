@@ -1,8 +1,6 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/data");
-  eleventyConfig.addPassthroughCopy({ "node_modules/leaflet/dist": "lib/leaflet" });
+  eleventyConfig.ignores.add("src/index.html");
 
   return {
     dir: {

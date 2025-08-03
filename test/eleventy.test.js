@@ -46,19 +46,19 @@ describe('Eleventy Build', () => {
   it('should copy static assets', async () => {
     await execAsync('npm run build');
     
-    // Check CSS
-    const cssPath = path.join(process.cwd(), '_site', 'css', 'main.css');
+    // Check CSS (Vite bundles all CSS into map.css)
+    const cssPath = path.join(process.cwd(), '_site', 'css', 'map.css');
     const cssExists = await fs.access(cssPath).then(() => true).catch(() => false);
     expect(cssExists).toBe(true);
     
-    // Check JS
+    // Check JS (Vite outputs the module)
     const jsPath = path.join(process.cwd(), '_site', 'js', 'map.js');
     const jsExists = await fs.access(jsPath).then(() => true).catch(() => false);
     expect(jsExists).toBe(true);
     
-    // Check Leaflet
-    const leafletCssPath = path.join(process.cwd(), '_site', 'lib', 'leaflet', 'leaflet.css');
-    const leafletExists = await fs.access(leafletCssPath).then(() => true).catch(() => false);
-    expect(leafletExists).toBe(true);
+    // Check data files
+    const dataPath = path.join(process.cwd(), '_site', 'data', 'tile-metadata.json');
+    const dataExists = await fs.access(dataPath).then(() => true).catch(() => false);
+    expect(dataExists).toBe(true);
   });
 });

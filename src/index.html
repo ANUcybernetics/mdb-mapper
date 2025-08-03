@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murray Darling Basin Map - Dev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Map</a>
+            <a href="/about/">About</a>
+        </nav>
+    </header>
+    <main>
+        <div id="map"></div>
+        <div class="time-controls">
+            <div class="time-display">
+                <span id="time-label">Date: </span>
+                <strong id="current-time">Loading...</strong>
+            </div>
+            <input type="range" id="time-slider" class="time-slider" min="0" max="100" value="0">
+            <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                <span id="start-time">Start</span>
+                <span id="end-time">End</span>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/js/map.js"></script>
+</body>
+</html>
