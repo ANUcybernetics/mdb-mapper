@@ -1,0 +1,23 @@
+{
+  "name": "mdb-mapper",
+  "version": "1.0.0",
+  "description": "A web-based interactive (aerial photography) map of the Murray Darling Basin which includes historical data and satellite imagery. This gives the viewer with the ability to see how the landscape has changed over time.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@aws-sdk/client-s3": "^3.859.0",
+    "jsdom": "^26.1.0",
+    "leaflet": "^1.9.4",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Murray Darling Basin Satellite Imagery",
+  "description": "Time series satellite imagery of the Murray Darling Basin",
+  "bounds": {
+    "north": -25.0,
+    "south": -38.0,
+    "east": 153.0,
+    "west": 138.0
+  },
+  "timeSeries": [
+    {
+      "date": "2023-01-15",
+      "tileUrl": "https://your-bucket.s3.amazonaws.com/tiles/2023-01-15/{z}/{x}/{y}.png",
+      "maxZoom": 18,
+      "minZoom": 5,
+      "description": "Summer 2023 imagery"
+    },
+    {
+      "date": "2023-07-15",
+      "tileUrl": "https://your-bucket.s3.amazonaws.com/tiles/2023-07-15/{z}/{x}/{y}.png",
+      "maxZoom": 18,
+      "minZoom": 5,
+      "description": "Winter 2023 imagery"
+    },
+    {
+      "date": "2024-01-15",
+      "tileUrl": "https://your-bucket.s3.amazonaws.com/tiles/2024-01-15/{z}/{x}/{y}.png",
+      "maxZoom": 18,
+      "minZoom": 5,
+      "description": "Summer 2024 imagery"
+    }
+  ],
+  "attribution": "Satellite imagery © Your Data Provider",
+  "tileFormat": "png",
+  "tileSize": 256
+}

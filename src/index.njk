@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Murray Darling Basin Map
+footerScripts: '<script src="/js/map.js"></script>'
+---
+
+<div id="map"></div>
+
+<div class="time-controls">
+    <div class="time-display">
+        <span id="time-label">Date: </span>
+        <strong id="current-time">Loading...</strong>
+    </div>
+    <input type="range" id="time-slider" class="time-slider" min="0" max="100" value="0">
+    <div style="display: flex; justify-content: space-between; font-size: 12px;">
+        <span id="start-time">Start</span>
+        <span id="end-time">End</span>
+    </div>
+</div>

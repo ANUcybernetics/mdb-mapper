@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Murray Darling Basin Mapper</title>
+    <link rel="stylesheet" href="/lib/leaflet/leaflet.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Map</a>
+            <a href="/about/">About</a>
+        </nav>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <script src="/lib/leaflet/leaflet.js"></script>
+    {{ footerScripts | safe }}
+</body>
+</html>
