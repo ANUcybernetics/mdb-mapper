@@ -7,30 +7,39 @@ the ability to see how the landscape has changed over time.
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (latest version via mise or system install)
 - npm
 - AWS CLI (for S3 uploads)
 
 ### Installation
+
 ```bash
 npm install
 ```
 
 ### Development
+
 Start the development server with hot reloading:
+
 ```bash
 npm run serve
 ```
+
 Visit http://localhost:8080 to view the site.
 
 ### Production Build
+
 Build the static site:
+
 ```bash
 npm run build
 ```
+
 Output will be in the `_site` directory.
 
 ### Testing
+
 ```bash
 npm test          # Run tests in watch mode
 npm run test:run  # Run tests once
@@ -39,7 +48,7 @@ npm run test:run  # Run tests once
 ## Using the Map
 
 - **Pan/Zoom**: Click and drag to pan, scroll to zoom
-- **Time Navigation**: 
+- **Time Navigation**:
   - Use the slider at the bottom to move through time
   - Ctrl/Cmd + scroll for quick time navigation
 - **View Locations**: Click on the map to explore different areas
@@ -47,6 +56,7 @@ npm run test:run  # Run tests once
 ## S3 Tile Upload
 
 ### Setup
+
 1. Configure AWS credentials:
    ```bash
    aws configure
@@ -58,16 +68,19 @@ npm run test:run  # Run tests once
    ```
 
 ### Upload Tiles
+
 ```bash
 ./scripts/upload-tiles.js <tiles-directory> <date-string>
 ```
 
 Example:
+
 ```bash
 ./scripts/upload-tiles.js ./tiles/2024-01-15 2024-01-15
 ```
 
 The tiles directory should have the structure:
+
 ```
 tiles/2024-01-15/
 ├── 5/    # zoom level
@@ -80,7 +93,8 @@ tiles/2024-01-15/
     └── ...
 ```
 
-After uploading, the script will update `src/data/tile-metadata.json` automatically.
+After uploading, the script will update `src/data/tile-metadata.json`
+automatically.
 
 ## Authors
 
