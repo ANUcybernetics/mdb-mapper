@@ -7,7 +7,7 @@ the ability to see how the landscape has changed over time.
 ## Tech Stack
 
 - **Build Tool**: Vite (for modern JavaScript bundling and development)
-- **Static Site Generator**: Eleventy (11ty) 
+- **Static Site Generator**: Eleventy (11ty)
 - **Testing**: Vitest
 - **Linting**: ESLint (configured for modern JS and functional programming)
 - **Map Library**: Leaflet
@@ -39,7 +39,8 @@ Visit http://localhost:5173 to view the site with live reloading.
 
 ### Production Build
 
-Build the production site (Vite bundles assets, then Eleventy generates static HTML):
+Build the production site (Vite bundles assets, then Eleventy generates static
+HTML):
 
 ```bash
 npm run build
@@ -122,6 +123,6 @@ automatically.
 
 Bill McAlister, Ben Swift
 
-## LICENCE
+## LICENSE
 
 MIT
