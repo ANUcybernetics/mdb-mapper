@@ -4,6 +4,14 @@ A web-based interactive (aerial photography) map of the Murray Darling Basin
 which includes historical data and satellite imagery. This gives the viewer with
 the ability to see how the landscape has changed over time.
 
+## Tech Stack
+
+- **Build Tool**: Vite (for modern JavaScript bundling and development)
+- **Static Site Generator**: Eleventy (11ty)
+- **Testing**: Vitest
+- **Map Library**: Leaflet
+- **Language**: Modern JavaScript (ES modules)
+
 ## Getting Started
 
 ### Prerequisites
@@ -20,23 +28,29 @@ npm install
 
 ### Development
 
-Start the development server with hot reloading:
+Start the Vite development server with hot module replacement:
 
 ```bash
-npm run serve
+npm run dev
 ```
 
-Visit http://localhost:8080 to view the site.
+Visit http://localhost:5173 to view the site with live reloading.
 
 ### Production Build
 
-Build the static site:
+Build the production site (Vite bundles assets, then Eleventy generates static HTML):
 
 ```bash
 npm run build
 ```
 
 Output will be in the `_site` directory.
+
+To preview the production build:
+
+```bash
+npm run serve
+```
 
 ### Testing
 
