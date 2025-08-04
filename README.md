@@ -24,7 +24,7 @@ All deps are tested with their latest versions---they may work with older
 versions too.
 
 If you use [mise](https://mise.jdx.dev/installing-mise.html) to manage your dev
-environment you can install everything with g`mise install`. But you can set
+environment you can install everything with `mise install`. But you can set
 things up a different way if that's your preference.
 
 ### Installation
