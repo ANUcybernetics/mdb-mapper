@@ -7,8 +7,9 @@ the ability to see how the landscape has changed over time.
 ## Tech Stack
 
 - **Build Tool**: Vite (for modern JavaScript bundling and development)
-- **Static Site Generator**: Eleventy (11ty)
+- **Static Site Generator**: Eleventy (11ty) 
 - **Testing**: Vitest
+- **Linting**: ESLint (configured for modern JS and functional programming)
 - **Map Library**: Leaflet
 - **Language**: Modern JavaScript (ES modules)
 
@@ -57,6 +58,13 @@ npm run serve
 ```bash
 npm test          # Run tests in watch mode
 npm run test:run  # Run tests once
+```
+
+### Linting
+
+```bash
+npm run lint      # Check code style
+npm run lint:fix  # Auto-fix code style issues
 ```
 
 ## Using the Map

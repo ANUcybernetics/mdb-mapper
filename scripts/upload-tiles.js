@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 /* eslint-disable no-console, no-unused-vars */
 
-// const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
-// const fs = require('fs').promises;
-const path = require('path');
+// import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
+// import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configuration
 const BUCKET_NAME = process.env.S3_BUCKET_NAME || 'your-tile-bucket';

@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/data');
   eleventyConfig.ignores.add('src/index.html');
 
@@ -10,4 +10,4 @@ module.exports = function(eleventyConfig) {
       layouts: '_layouts'
     }
   };
-};
+}

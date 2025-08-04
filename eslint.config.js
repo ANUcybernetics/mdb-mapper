@@ -4,7 +4,7 @@ import functional from 'eslint-plugin-functional';
 export default [
   js.configs.recommended,
   {
-    ignores: ['_site/**', 'node_modules/**', 'lib/**'],
+    ignores: ['_site/**', 'node_modules/**', 'lib/**']
   },
   {
     files: ['**/*.js'],
