@@ -95,14 +95,14 @@ class MurrayDarlingMap {
   }
 
   setupWheelNavigation() {
-    let wheelTimeout;
+    const wheelTimeoutRef = { current: null };
     
     this.map.getContainer().addEventListener('wheel', (e) => {
       if (e.ctrlKey || e.metaKey) {
         e.preventDefault();
         
-        clearTimeout(wheelTimeout);
-        wheelTimeout = setTimeout(() => {
+        clearTimeout(wheelTimeoutRef.current);
+        wheelTimeoutRef.current = setTimeout(() => {
           const delta = e.deltaY > 0 ? 1 : -1;
           const newIndex = Math.max(0, Math.min(this.imageryLayers.length - 1, this.currentLayerIndex + delta));
           
@@ -116,7 +116,7 @@ class MurrayDarlingMap {
   }
 
   showLayer(index) {
-    if (index < 0 || index >= this.imageryLayers.length) return;
+    if (index < 0 || index >= this.imageryLayers.length) {return;}
 
     if (this.imageryLayers[this.currentLayerIndex]) {
       this.imageryLayers[this.currentLayerIndex].layer.setOpacity(0);

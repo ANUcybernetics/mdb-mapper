@@ -11,7 +11,7 @@ describe('Eleventy Build', () => {
     // Clean build directory
     try {
       await fs.rm(path.join(process.cwd(), '_site'), { recursive: true, force: true });
-    } catch (e) {
+    } catch {
       // Directory might not exist
     }
   });
