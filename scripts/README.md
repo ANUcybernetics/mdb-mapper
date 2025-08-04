@@ -1,6 +1,7 @@
 # MDB Mapper Scripts
 
-This directory contains utility scripts for data processing and maintenance tasks for the MDB Mapper project.
+This directory contains utility scripts for data processing and maintenance
+tasks for the MDB Mapper project.
 
 ## Directory Structure
 
@@ -12,10 +13,12 @@ This directory contains utility scripts for data processing and maintenance task
 ## JavaScript Scripts
 
 ### Prerequisites
-- Node.js (version specified in root `.nvmrc`)
+
+- Node.js (version specified in root `mise.toml`)
 - Dependencies installed via `npm install` in the project root
 
 ### Running JavaScript Scripts
+
 ```bash
 # From project root
 node scripts/upload-tiles.js
@@ -26,15 +29,18 @@ node upload-tiles.js
 ```
 
 ### Available JavaScript Scripts
+
 - `upload-tiles.js` - Uploads map tiles to S3 storage
 
 ## Python Scripts
 
 ### Prerequisites
+
 - [uv](https://github.com/astral-sh/uv) installed
 - Python 3.13+ (managed automatically by uv)
 
 ### Setup
+
 ```bash
 # From scripts directory
 cd scripts
@@ -42,6 +48,7 @@ uv sync
 ```
 
 ### Running Python Scripts
+
 ```bash
 # From scripts directory
 cd scripts
@@ -55,9 +62,12 @@ uv run --with pandas python data_processor.py
 ```
 
 ### Available Python Scripts
-- `example_script.py` - Demonstrates uv dependency management with the `rich` library
+
+- `example_script.py` - Demonstrates uv dependency management with the `rich`
+  library
 
 ### Adding Python Dependencies
+
 ```bash
 cd scripts
 # Add to project dependencies
@@ -70,11 +80,13 @@ uv run --with requests python fetch_data.py
 ## Development Guidelines
 
 ### JavaScript
+
 - Use ES6 modules (type: "module" is set in package.json)
 - Follow the project's ESLint configuration
 - Prefer functional programming patterns
 
 ### Python
+
 - Keep scripts focused on data processing and preprocessing
 - Use type hints where appropriate
 - Follow PEP 8 style guidelines
@@ -85,9 +97,10 @@ uv run --with requests python fetch_data.py
 ## Examples
 
 ### Creating a New JavaScript Script
+
 ```javascript
 // scripts/process-data.js
-import fs from 'fs/promises';
+import fs from "fs/promises";
 
 const processData = async () => {
   // Your processing logic here
@@ -97,6 +110,7 @@ processData().catch(console.error);
 ```
 
 ### Creating a New Python Script
+
 ```python
 # scripts/analyze_tiles.py
 """Analyze tile data for the MDB Mapper project."""
@@ -109,7 +123,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('input', type=Path, help='Input data path')
     args = parser.parse_args()
-    
+
     # Your processing logic here
 
 
