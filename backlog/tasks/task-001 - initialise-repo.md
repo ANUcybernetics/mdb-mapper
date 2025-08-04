@@ -1,10 +1,10 @@
 ---
-id: task-1
+id: task-001
 title: initialise repo
 status: Done
 assignee: []
-created_date: '2025-08-03 22:26'
-updated_date: '2025-08-03 23:57'
+created_date: "2025-08-03 22:26"
+updated_date: "2025-08-03 23:57"
 labels: []
 dependencies: []
 ---
@@ -37,6 +37,7 @@ two-finger scroll) as well would be even better.
 ## Progress Notes
 
 ### Completed:
+
 1. ✅ Initialized npm project with latest Eleventy (v3.1.2)
 2. ✅ Created Eleventy static site structure with proper configuration
 3. ✅ Implemented landing page with Leaflet.js map integration
@@ -44,8 +45,10 @@ two-finger scroll) as well would be even better.
    - Time slider at bottom of map
    - Ctrl/Cmd + scroll wheel for gesture-based navigation
    - Smooth transitions between time periods
-5. ✅ Created metadata structure (tile-metadata.json) in GeoJSON-compatible format
-6. ✅ Created S3 upload scripts (stubbed implementation in scripts/upload-tiles.js)
+5. ✅ Created metadata structure (tile-metadata.json) in GeoJSON-compatible
+   format
+6. ✅ Created S3 upload scripts (stubbed implementation in
+   scripts/upload-tiles.js)
 7. ✅ Created about page with project information
 8. ✅ Set up test suite using Vitest (lightweight testing library)
    - Metadata validation tests
@@ -53,6 +56,7 @@ two-finger scroll) as well would be even better.
    - All tests passing
 
 ### Implementation Details:
+
 - Map centered on Murray Darling Basin coordinates (-33.0, 143.0)
 - Time slider shows formatted dates for each imagery capture
 - Metadata supports multiple time series entries with S3 tile URLs

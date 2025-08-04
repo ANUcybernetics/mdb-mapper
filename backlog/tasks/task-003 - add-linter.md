@@ -1,5 +1,5 @@
 ---
-id: task-3
+id: task-003
 title: add linter
 status: To Do
 assignee: ["Ben"]

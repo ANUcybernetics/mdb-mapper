@@ -1,13 +1,13 @@
 ---
-id: task-5
+id: task-005
 title: host on GitHub pages
 status: To Do
 assignee: []
-created_date: '2025-08-03 23:54'
-updated_date: '2025-08-03 23:57'
+created_date: "2025-08-03 23:54"
+updated_date: "2025-08-03 23:57"
 labels: []
 dependencies:
-  - task-4
+  - task-004
 ---
 
 ## Description
