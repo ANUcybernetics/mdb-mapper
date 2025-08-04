@@ -1,3 +1,4 @@
 [tools]
 bun = "latest"
 npm = "latest"
+uv = "latest"
