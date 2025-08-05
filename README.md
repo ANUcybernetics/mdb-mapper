@@ -1,8 +1,8 @@
 # MDB-Mapper
 
 A web-based interactive (aerial photography) map of the Murray Darling Basin
-which includes historical data and satellite imagery. This gives the viewer with
-the ability to see how the landscape has changed over time.
+which includes historical satellite imagery. This gives the viewer with the
+ability to see how the landscape has changed over time.
 
 ## Tech Stack
 
@@ -17,9 +17,15 @@ the ability to see how the landscape has changed over time.
 
 ### Prerequisites
 
-- Node.js (latest version via mise or system install)
-- npm
-- AWS CLI (for S3 uploads)
+- `node` & `npm`
+- `uv` (optional, only if you want to use python scripts for data processing)
+
+All deps are tested with their latest versions---they may work with older
+versions too.
+
+If you use [mise](https://mise.jdx.dev/installing-mise.html) to manage your dev
+environment you can install everything with `mise install`. But you can set
+things up a different way if that's your preference.
 
 ### Installation
 
@@ -35,7 +41,7 @@ Start the Vite development server with hot module replacement:
 npm run dev
 ```
 
-Visit http://localhost:5173 to view the site with live reloading.
+Visit <http://localhost:5173> to view the site with live reloading.
 
 ### Production Build
 
