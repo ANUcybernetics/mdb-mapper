@@ -83,5 +83,4 @@ cython_debug/
 .DS_Store
 
 # Project specific
-preprocessed_data/
-image_tiles/
+data/
