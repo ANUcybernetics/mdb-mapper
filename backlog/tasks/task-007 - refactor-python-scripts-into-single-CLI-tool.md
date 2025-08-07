@@ -1,9 +1,10 @@
 ---
 id: task-007
 title: refactor python scripts into single CLI tool
-status: To Do
+status: Done
 assignee: []
 created_date: "2025-08-07 01:58"
+updated_date: "2025-08-07 02:10"
 labels: []
 dependencies: []
 ---
@@ -29,3 +30,18 @@ Keep the code simple and readable. The existing @scripts/image-geolocation.py`
 has some functionality which is part of the preprocess step, but for the
 purposes of this task the actual commands should be stubbed out - the purpose is
 to set the project and modules up in a sensible, modern and pythonic way.
+
+## Implementation Notes
+
+Completed the refactoring with the following structure:
+
+- Created `pyproject.toml` with project configuration for `mdb_mapper` package
+- Set up package structure at `scripts/mdb_mapper/` with `__init__.py`
+- Implemented CLI using `typer` with two commands:
+  - `preprocess`: Takes raw_data_dir and metadata (geojson) arguments
+  - `process`: Takes preprocessed_data_dir argument
+- Both commands are stubbed but have proper argument handling and error checking
+- Added comprehensive pytest test suite in `scripts/tests/`
+- All tests pass (9 tests total)
+- Package installed successfully with `uv pip install -e ".[dev]"`
+- CLI commands work as expected with proper help and error messages

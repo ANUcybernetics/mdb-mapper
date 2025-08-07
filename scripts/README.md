@@ -44,7 +44,7 @@ node upload-tiles.js
 ```bash
 # From scripts directory
 cd scripts
-uv sync
+uv pip install -e ".[dev]"  # Installs mdb_mapper CLI tool
 ```
 
 ### Running Python Scripts
@@ -65,6 +65,20 @@ uv run --with pandas python data_processor.py
 
 - `example_script.py` - Demonstrates uv dependency management with the `rich`
   library
+- `mdb_mapper` - CLI tool for image preprocessing and tiling (installed as command)
+
+#### MDB Mapper CLI
+
+```bash
+# Preprocess raw images with metadata
+uv run mdb_mapper preprocess <raw_data_dir> <metadata.geojson>
+
+# Process preprocessed images into tiles  
+uv run mdb_mapper process <preprocessed_data_dir> [output_dir]
+
+# Run tests
+uv run pytest tests/
+```
 
 ### Adding Python Dependencies
 
